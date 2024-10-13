@@ -1,0 +1,157 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles for body */
+  body {
+    font-family: 'Poppins', sans-serif; /* Use a clean, modern font */
+    background-color: #070729; /* Set a dark background for a modern look */
+    color: white; /* Text color for better readability */
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  
+.container {
+    padding: 20px;
+    text-align: center;
+    background-color: #070729;
+  }
+  
+  /* Responsive Search Bar */
+  .searchContainer {
+    margin: 20px auto;
+  }
+  
+  .searchInput {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    font-size: 1.1rem;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .searchInput:focus {
+    border-color: #0077ff;
+    outline: none;
+  }
+  
+  /* Title Styling */
+  .title {
+    font-size: 2rem;
+    color: #c4c0c0;
+    margin-bottom: 20px;
+  }
+  
+  /* Gallery Wrapper */
+  .galleryWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Grid System for Images */
+  .imageGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .imageItem {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .imageItem:hover {
+    transform: scale(1.05);
+  }
+  
+  .imageContainer {
+    position: relative;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .imageItem:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* Image Description and Link */
+  .description {
+    margin-top: 10px;
+  }
+  
+  .imageLink {
+    color: #0077ff;
+    text-decoration: none;
+  }
+  
+  .imageLink:hover {
+    text-decoration: underline;
+  }
+  
+  /* Loading Spinner */
+  .loading {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+  
+  /* Show More Button */
+  .showMoreWrapper {
+    margin-top: 20px;
+  }
+  
+  .showMoreButton {
+    background-color: #0077ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .showMoreButton:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Scroll-to-Top Button */
+  .scrollTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10%;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .scrollTopButton:hover {
+    background-color: #0056b3;
+  }
+  
